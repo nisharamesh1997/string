@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial--scale=1.0">
+    <title>string</title>
+</head>
+
+<body>
+    <h2>Javascript string properties</h2>
+    <p id='demo'></p>
+    <script>
+        //length
+        var aa = 'my character is backslash';
+        var sln = aa.length;
+        document.getElementById('demo').innerHTML = sln;
+        //index
+        var ab = 'javascript index string';
+        var pos = ab.indexOf('index');
+        document.getElementById('demo').innerHTML = pos;
+        //lastindex
+        var cc = 'my name is sweety';
+        var pos = cc.lastIndexOf('is');
+        document.getElementById('demo').innerHTML = pos;
+        //search
+        var dd = 'keep it up';
+        var pos = dd.search('it');
+        document.getElementById('demo').innerHTML = pos;
+        //slice
+        var ee = 'Mango,Orange,Grapes,Banana';
+        var res = ee.slice(6, 18);
+        document.getElementById('demo').innerHTML = res;
+        //substring
+        var ff = 'Mango,Orange,Grapes,Banana';
+        var res = ff.substring(13, 26);
+        document.getElementById('demo').innerHTML = res;
+        //substr
+        var cd = 'Mango,Orange,Grapes,Banana';
+        var res = cd.substr(6, 24);
+        document.getElementById('demo').innerHTML = res;
+        //concat
+        var a = 'Come';
+        var b = 'Fast';
+        var c = a.concat(' ', b);
+        document.getElementById('demo').innerHTML = c;
+        //Extracting char
+        var tt = 'MY NAME IS SWEETY';
+        document.getElementById("demo").innerHTML = tt.charAt(8);
+        //Extracting charcode
+        var td = 'MY NAME IS SWEETY';
+        document.getElementById("demo").innerHTML = td.charAt(16);
+        //Extracting property access
+        var te = 'MY NAME IS SWEETY';
+        document.getElementById("demo").innerHTML = te[0];
+        //lower and upper case
+        var text = 'Hello World';
+        document.getElementById("demo").innerHTML = text.toUpperCase();
+        //trim
+        var zz = '     Come Fast    ';
+        document.getElementById("demo").innerHTML = zz.trim();
+    </script>
+</body>
+
+</html>
