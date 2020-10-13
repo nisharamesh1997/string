@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial--scale=1.0">
+    <title>Replace</title>
+</head>
+
+<body>
+    <h2>Javascript string properties</h2>
+    <p id='demo'>Please visit course!</p>
+    <button onclick="myJavascript()">Try it</button>
+    <script>
+        function myJavascript() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("course","javascript");
+  document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+
+</html>
